@@ -2,10 +2,12 @@ package com.example.dumm
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.text.font.FontWeight
@@ -48,6 +50,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "AC",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(LightGray)
                         .aspectRatio(2f)
                         .weight(2f),
@@ -58,6 +61,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "Del",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(LightGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -68,6 +72,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "/",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Orange)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -84,6 +89,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "7",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -94,6 +100,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "8",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -104,6 +111,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "9",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -114,6 +122,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "X",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Orange)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -130,6 +139,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "4",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -140,6 +150,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "5",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -150,6 +161,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "6",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -160,6 +172,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "-",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Orange)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -176,6 +189,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "1",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -186,6 +200,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "2",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -196,6 +211,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "3",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -206,6 +222,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "+",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Orange)
                         .aspectRatio(1f)
                         .weight(1f),
@@ -222,9 +239,10 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "0",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
-                        .weight(1f),
+                        .weight(2f),
                     onClick = {
                         onAction(CalculatorAction.Number(0))
                     }
@@ -232,9 +250,10 @@ fun Calculator(
                 CalculatorButton(
                     symbol = ".",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Color.DarkGray)
                         .aspectRatio(1f)
-                        .weight(1f),
+                        .weight(2f),
                     onClick = {
                         onAction(CalculatorAction.Decimal)
                     }
@@ -242,9 +261,10 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "=",
                     modifier = Modifier
+                        .clip(RoundedCornerShape(50.dp))
                         .background(Orange)
                         .aspectRatio(1f)
-                        .weight(1f),
+                        .weight(2f),
                     onClick = {
                         onAction(CalculatorAction.Calculate)
                     }
