@@ -134,7 +134,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(7))
+                        onAction(CalculatorAction.Number(4))
                     }
                 )
                 CalculatorButton(
@@ -144,7 +144,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(8))
+                        onAction(CalculatorAction.Number(5))
                     }
                 )
                 CalculatorButton(
@@ -154,7 +154,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(9))
+                        onAction(CalculatorAction.Number(6))
                     }
                 )
                 CalculatorButton(
@@ -180,7 +180,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(7))
+                        onAction(CalculatorAction.Number(1))
                     }
                 )
                 CalculatorButton(
@@ -190,7 +190,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(8))
+                        onAction(CalculatorAction.Number(2))
                     }
                 )
                 CalculatorButton(
@@ -200,11 +200,11 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(9))
+                        onAction(CalculatorAction.Number(3))
                     }
                 )
                 CalculatorButton(
-                    symbol = "X",
+                    symbol = "+",
                     modifier = Modifier
                         .background(Orange)
                         .aspectRatio(1f)
@@ -226,7 +226,7 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        onAction(CalculatorAction.Number(7))
+                        onAction(CalculatorAction.Number(0))
                     }
                 )
                 CalculatorButton(
